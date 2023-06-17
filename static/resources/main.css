@@ -1,0 +1,2561 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari:100,400,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+   
+    font-family: 'Manjari', sans-serif;
+    
+}
+
+
+li{
+  text-decoration: none ;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.sidebar {
+    width: 80px;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #373C4F;
+    box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.06);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.main-menu {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    list-style: none;
+    position: relative;
+    width: 85px;
+    height: 65px;
+}
+
+.menu-txt {
+    opacity: 0;
+    width: 0px;
+    min-width: 0px;
+    overflow: hidden;
+    transition: 300ms linear;
+    transition-delay: 250ms;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu-a {
+    padding: 35px 33.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    color: #bdbdbd;
+    position: relative;
+    z-index: 100;
+    transition: 400ms;
+}
+
+.menu-item:hover .menu-txt {
+    opacity: 1;
+    width: 100%;
+    min-width: 40px;
+    padding: 0px 20px;
+    transition-delay: 0s;
+    color: #4c4c4c;
+}
+
+.menu-txt-hld {
+    position: absolute;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 38px;
+    font-size: .94rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0);
+    padding: 9.5px 8px;
+    transition: 250ms linear;
+    display: flex;
+    align-items: center;
+    left: 20px;
+    transition-delay: 300ms;
+}
+
+.menu-item:hover .menu-txt-hld {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition-delay: 0ms;
+}
+.active .menu-icon {
+    color: #03A9F4;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    margin: -5px 0px 0px -9px;
+}
+
+
+
+
+
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 80px;
+}
+.main-bar{
+    height: 100vh;
+    width: 54%;
+    padding: 30px;
+}
+.current-page{
+  font-size: 2rem;
+  border-bottom:2px solid #373c4f;
+  padding: -7px;
+} 
+
+.main-bar-assignment-text{
+    height: 45px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 10px;
+    padding: 10px 0px 0px 20px ;
+    font-size: larger;
+    color: #fff;
+    background-color: #4c4c4c;
+}
+
+
+
+
+.subjects{
+  height: 80px;
+  border-radius:10px ;
+  margin: 7px 0px 0px 0px;
+  padding: 12px;
+  display: flex;  
+  justify-content: space-between; 
+}
+
+.subject-list{
+  height: 390px;
+
+  border: 2px solid #292B3B;
+  padding: 10px ;
+  border-radius: 10px;
+  overflow: auto;
+}
+.sub-info{
+  margin-left: 10px;
+}
+.sub-text{
+  color: white;
+  font-size: large;
+}
+.prof{
+  color: #C5C9DA;
+  font-size: small;
+}
+.sub-icon-text{
+  display: flex;
+  justify-content: left;
+}
+.pending-assignmnets{
+  height: 50px;
+  width: 50px;
+  background-color: #F4F6FF;
+  border-radius:10px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.pending-assignmnets-no{
+  font-size: x-large;
+}
+.pending-assignmnets-text{
+  font-size: xx-small;
+  
+}
+#graphics{
+  background-color: #373c4f;
+}
+#IT{
+  background-color: #313647;
+}
+#DM{
+  background-color: #2a1b3d;
+}
+#TOC{
+  background-color: #373c47;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar-right{
+    width: 46%;
+    height: 100vh;
+    padding: 30px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-utilities{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid #4c4c4c;
+    padding: 10px;
+}
+#notification{
+    height: 40px;
+    width: 40px;
+}
+.profile-util{
+    position: relative;
+    float: left;
+}
+#profile{
+    
+    border-radius: 10px;
+    padding: 4px;
+}
+.profile-block{
+    float: left;
+    
+}
+#profile-text{
+    margin-top: 6px;
+}
+#username{
+    color: #292B3B;
+    
+}
+#roll-number{
+    color: #313c4f;
+    font-size: small;
+}
+.sidebar-icon{
+    margin-left: 5px;
+    display: block;
+    font-size: 2.2rem;
+    color: #bdbdbd;
+    position: relative;
+    transition: 400ms;
+}
+
+
+
+
+
+
+
+  .side-container {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    margin: 20px auto 0px auto;
+    padding: 2px;
+    color: #fff;
+    display: flex;
+    border-radius: 10px;
+    background-color: #373c4f;
+  
+  }
+  .left {
+    width: 60%;
+    padding: 5px;
+  }
+  .calendar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #878895;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  /* set after behind the main element */
+  .calendar::before,
+  .calendar::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 12px;
+    height: 97%;
+    border-radius: 0 5px 5px 0;
+    background-color: #d3d4d6d7;
+    transform: translateY(-50%);
+  }
+  .calendar::before {
+    height: 94%;
+    left: calc(100% + 12px);
+    background-color: rgb(153, 153, 153);
+  }
+  .calendar .month {
+    width: 100%;
+    margin: 5px 0px 0px 0px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .calendar .month .prev,
+  .calendar .month .next {
+    cursor: pointer;
+  }
+  .calendar .month .prev:hover,
+  .calendar .month .next:hover {
+    color: #b38add;
+  }
+  .calendar .weekdays {
+    margin-top: -60px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .weekdays div {
+    width: 14.28%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .calendar .days {
+    width: 100%;
+    margin-top: -60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 500;
+  
+  }
+  .calendar .days .day {
+    width: 14.28%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #878895;
+    border: 1px solid #f5f5f5;
+  }
+  .calendar  .days .day:nth-child(7n + 1) {
+    border-left: 2px solid #f5f5f5;
+    color:#b38add;
+  }
+  .calendar  .weekdays .weekdays:first-child{
+    border-left: 2px solid #f5f5f5;
+  
+  }
+  
+  .calendar .days .day:nth-child(7n) {
+    border-right: 2px solid #f5f5f5;
+
+  }
+  .calendar .days .day:nth-child(-n + 7) {
+    border-top: 2px solid #f5f5f5;
+  }
+  .calendar .days .day:nth-child(n + 29) {
+    border-bottom: 2px solid #f5f5f5;
+  }
+  
+  .calendar .days .day:not(.prev-date, .next-date):hover {
+    color: #fff;
+    background-color: #b38add;
+  }
+  .calendar .days .prev-date,
+  .calendar .days .next-date {
+    color: #b3b3b3;
+  }
+  .calendar .days .active {
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #b38add;
+ 
+  }
+  .calendar .days .active:nth-child(7n+1) {
+    color: #fff;
+  }
+  .calendar .days .active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px 2px #b38add;
+  }
+  
+  .calendar .days .event {
+    position: relative;
+  }
+  .calendar .days .event::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 75%;
+    height: 6px;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    background-color: #b38add;
+  }
+  .calendar .days .day:hover.event::after {
+    background-color: #fff;
+  }
+
+  .calendar .days .active.event {
+    padding-bottom: 10px;
+  }
+  .calendar .goto-today {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    color: #b38add;
+  }
+  .calendar .goto-today .goto {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #b38add;
+  }
+  .calendar .goto-today .goto input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    color: #b38add;
+    border-radius: 5px;
+  }
+  .calendar .goto-today button {
+    padding: 5px 10px;
+    border: 1px solid #b38add;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #b38add;
+  }
+  .calendar .goto-today button:hover {
+    color: #fff;
+    background-color: #b38add;
+  }
+  .calendar .goto-today .goto button {
+    border: none;
+    border-left: 1px solid #b38add;
+    border-radius: 0;
+  }
+  .container .right {
+    position: relative;
+    width: 35%;
+
+    margin: 10px 0px 0px 30px;
+
+  }
+  
+  .right .today-date {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  .right .today-date .event-day {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .right .today-date .event-date {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #878895;
+  }
+  .events {
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4px;
+  }
+  .events .event {
+    position: relative;
+    width: 95%;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px;
+    color: #fff;
+    background: linear-gradient(90deg, #3f4458, transparent);
+    cursor: pointer;
+  }
+  /* even event */
+  .events .event:nth-child(even) {
+    background: transparent;
+  }
+  .events .event:hover {
+    background: linear-gradient(90deg, #b38add, transparent);
+  }
+  .events .event .title {
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+  }
+  .events .event .title .event-title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  .events .event i {
+    color: #b38add;
+    font-size: 0.5rem;
+  }
+  .events .event:hover i {
+    color: #fff;
+  }
+  .events .event .event-time {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #878895;
+    margin-left: 5px;
+    pointer-events: none;
+  }
+  .events .event:hover .event-time {
+    color: #fff;
+  }
+  /* add tick in event after */
+  .events .event::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 3rem;
+    line-height: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.3;
+    color: #b38add;
+    transform: translateY(-50%);
+  }
+  .events .event:hover::after {
+    display: flex;
+  }
+  .add-event {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #878895;
+    border: 2px solid #878895;
+    opacity: 0.5;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .add-event:hover {
+    opacity: 1;
+  }
+  .add-event i {
+    pointer-events: none;
+  }
+  .events .no-event {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: -80px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #878895;
+  }
+  .add-event-wrapper {
+    position: absolute;
+    bottom: 70px;
+    left: 70%;
+    width: 40%;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #fff;
+    transform: translateX(-50%);
+    transition: max-height 0.5s ease;
+    
+  }
+  .add-event-wrapper.active {
+    max-height: 300px;
+  }
+  .add-event-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #373c4f;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .add-event-header .close {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .add-event-header .close:hover {
+    color: #b38add;
+  }
+  .add-event-header .title {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .add-event-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+  }
+  .add-event-body .add-event-input {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .add-event-body .add-event-input input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #373c4f;
+  }
+  .add-event-body .add-event-input input::placeholder {
+    color: #a5a5a5;
+  }
+  .add-event-body .add-event-input input:focus {
+    border-bottom: 1px solid #b38add;
+  }
+  .add-event-body .add-event-input input:focus::placeholder {
+    color: #b38add;
+  }
+  .add-event-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .add-event-footer .add-event-btn {
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #b38add;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #b38add;
+  }
+  .add-event-footer .add-event-btn:hover {
+    background-color: transparent;
+    color: #b38add;
+  }
+  
+  /* media queries */
+  
+  @media screen and (max-width: 1000px) {
+    body {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .container {
+      
+      flex-direction: column;
+      border-radius: 0;
+    }
+    .container .left {
+      width: 100%;
+      height: 100%;
+      padding: 20px 0;
+    }
+    .container .right {
+      width: 100%;
+      height: 20%;
+      padding: 10px 0;
+    }
+    .calendar::before,
+    .calendar::after {
+      top: 100%;
+      left: 50%;
+      width: 97%;
+      height: 12px;
+      border-radius: 0 0 5px 5px;
+      transform: translateX(-50%);
+    }
+    .calendar::before {
+      width: 94%;
+      top: calc(100% + 12px);
+    }
+    .events {
+      padding-bottom: 340px;
+    }
+    .add-event-wrapper {
+      bottom: 100px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .calendar .month {
+      height: 75px;
+    }
+    .calendar .weekdays {
+      height: 50px;
+    }
+    .calendar .days .day {
+      height: 40px;
+      font-size: 0.8rem;
+    }
+    .calendar .days .day.active,
+    .calendar .days .day.today {
+      font-size: 1rem;
+    }
+    .right .today-date {
+      padding: 20px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+  #attendance{
+    caret-color: transparent;
+    border:2px solid #292B3B;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+}
+  
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+  
+div[role="progressbar"] {
+    --size: 50px;
+    --fg: #b38add;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-size: calc(var(--size) / 4);
+    color: var(--fg);
+}
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+#att-text{
+    color: #292B3B;
+    font-size: large;
+    margin: 15px 0px 0px 10px;
+   
+}
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*profile page*/
+
+
+
+
+
+.profile-img{
+ font-size: 6rem;
+}
+#profile-preview{
+  margin-top: 20px;
+  padding: 15px 30px 15px 30px;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+
+  border: 1.5px solid #313c4f;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #4c4c4c;
+}
+.prof-text{
+  margin: 0px 0px 0px 3px;
+  font-size: 0.9rem;
+}
+
+.prof-icon{
+  font-size: 1.5rem;
+  
+
+}
+#details{
+  margin: 10px 0px 0px 0px;
+  height:300px ;
+  border: 1.5px solid  #292B3B;
+  border-radius: 10px;
+  
+  padding: 20px;
+}
+.btn-grp{
+  display: flex;
+  justify-content: space-around;
+}
+.prof-btn{
+  width: 120px;
+  margin-top: 2px;
+  color: #ffff;
+  background-color: #313c4f;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+}
+.prof-details{
+  margin: 5px 0px 0px 0px ;
+  height: 190px ;
+  border: 1px solid #3e3e4c;
+  border-radius: 10px;
+  overflow: auto;
+  font-size: large;
+}
+
+
+#program-details{
+  display: none;
+}
+#family-details{
+  display: none;
+}
+#address-details{
+  display: none;
+}
+.prof-btn:active{
+  box-shadow: 2px 2px 5px #292B3B;
+}
+
+.table{
+  margin-bottom: 10px;
+}
+ul{
+  list-style: none;
+}
+.table  th,td{
+
+  width: 150px;
+  padding: 3px;
+  font-weight: 100;
+  font-size: 1rem;
+}
+.table th{
+  font-weight: 400;
+}
+.table td{
+  color: #292B3B;
+  font-size: 1rem;
+}
+.relation{
+  margin: 0px 0px 0px 20px;
+  font-size: larger;
+  color: #313c4f;
+  display: flex;
+}
+#address-table td{
+  height: 70px;
+}
+
+
+
+
+
+.floating-label-group {
+  position: relative;
+  margin-top: 17px;
+  
+}
+.floating-label-group input{
+  width: 100%;
+  height: 35px;
+}
+.floating-label-group .floating-label {
+  font-size: 13px;
+  color: #C5C9DA;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left: 12px;
+  transition: all 0.1s ease;
+}
+.floating-label-group input:focus ~ .floating-label,
+.floating-label-group input:not(:focus):valid ~ .floating-label {
+  top: -15px;
+  bottom: 0px;
+  left: 0px;
+  font-size: small;
+  opacity: 1;
+  color: #373c47;
+}
+.row {
+  margin-top: 50px;
+}
+.update-submit-btn{
+  margin: 5px 0px 0px 0px ;
+  
+  border: none;
+  border-radius: 3px;
+  padding: 7px;
+  width: 100%;
+}
+#password-submit{
+  background-color: #373C4F;
+  color: #fff;
+}
+
+#update-profie{
+  margin-top: 10px;
+  height: 460px;
+  border: 2px solid #C5C9DA;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: auto;
+}
+#text-msg{
+  font-size: x-large;
+  background-color: #0067FF;
+  border-radius: 15px;
+  color:#fff;
+  padding: 10px;
+}
+.update-profile-element{
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 20px;
+  border-radius: 5px;
+}
+#change-password{
+  background-color: #292B3B;
+  color: #fff;
+}
+#change-password-form{
+  border: 2px solid #292B3B;
+  border-radius: 5px;
+  padding: 0px 10px 10px 10px ;
+  
+}
+#contact-info{
+  background-color: #373c47;
+  color: #fff;
+}
+#contact-info-form{
+  border-radius: 5px;
+  border: 2px solid #292B3B;
+  padding:5px 10px 5px 10px ;
+  display: none;
+}
+#contact-submit{
+  background-color: #373c4f;
+  color: #fff;
+}
+
+#address-info{
+  background-color: #292B3B;
+  color: #fff;
+}
+#address-info-form{
+  border-radius: 5px;
+  border: 2px solid #292B3B;
+  padding:5px 10px 5px 10px ;
+  display: none;
+}
+#address-submit{
+  background-color: #292B3B;
+  color: #fff;
+}
+
+
+#other-info{
+  background-color: #292B3B;
+  color: #fff;
+}
+#other-info-form{
+  border-radius: 5px;
+  border: 2px solid #292B3B;
+  padding:5px 10px 5px 10px ;
+  display: none;
+}
+#other-submit{
+  background-color: #292B3B;
+  color: #fff;
+}
+#warning-text{
+  color: red;
+  font-size: smaller;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+
+
+
+
+/*fee trasactions*/
+
+#sem-sel{
+  margin-top: 10px;
+    
+  height: 60px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #373c4f;
+}
+
+#fee-details{
+margin-top: 5px;
+border:2px solid #C5C9DA;
+border-radius: 10px;
+height: 380px;
+padding: 5px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+}
+#fee-data{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+.fee-amount-data{
+  display: none;
+}
+
+#sem-label{
+color: #fff;
+}
+#sem-name{
+display: flex;
+justify-content: center;
+font-weight: normal;
+font-size: x-large;
+background-color: #373c4f;
+border-radius: 5px;
+color: #fff;
+padding: 5px;
+}
+#fee-data-table{
+
+border-collapse: collapse;
+width:100% ;
+}
+th,td{
+border: 1px solid #ced6e0;
+
+height: 30px;
+
+padding: 3px 0px 3px 20px;
+}
+
+
+.fee-sem-sel{
+  margin-top: 10px;
+
+  height: 80px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #373c4f;
+}
+
+
+
+
+
+
+
+
+
+
+#total-pay{
+display: flex;
+justify-content: end;
+visibility: hidden;
+}
+#pay-amt{
+height: 35px;
+margin-right: 10px;
+width: 87px;
+padding-left: 7px;
+border-radius: 5px;
+border: 1px solid #C5C9DA;
+}
+#pay-amt-label{
+height: 36px;
+background-color: #373c4f;
+color: #fff;
+padding: 6px;
+border-radius: 5px;
+margin-right: -5px;
+}
+#pay-now-btn{
+height: 35px;
+background-color: #373c4f;
+color: #fff;
+border:none;
+padding: 5px;
+border-radius: 5px;
+text-decoration: n;
+}
+
+#sem-select{
+height: 37px;
+}
+#sem-submit{
+height: 37px;
+width: 90px;
+background-color: #fff;
+border:1.5px solid #fff;
+border-radius: 4px;
+color: #373c4f;
+margin-top: -5px;
+}
+#sem-submit:active{
+box-shadow: 2px 2px 5px #292B3B;
+}
+
+
+#sem-sel-form-fee{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.payment-form{
+  --field-border: 1px solid #EEEEEE;
+  --accent-color: #373C4F;
+  --sidebar-color: #F1F1F1;
+  --secondary-text: #aaaaaa;
+  --radius-sm: .25em;
+  --radius-md: .50em;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: -529px 0px 0px 150px;
+  border-radius: 10px;
+  border: 1px solid #313c4f;
+  display: none;
+}
+
+
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-fill {
+  display: flex;
+  flex: 1 1;
+}
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+.flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.p-sm  { padding: .5em; }
+.pl-sm { padding-left: .5em; }
+.pr-sm { padding-right: .5em; }
+.pb-sm { padding-bottom: .5em; }
+.p-md  { padding: 1em; }
+.pb-md { padding-bottom: 1em; }
+.p-lg  { padding: 2em; }
+.m-md  { margin: 1em; }
+.size-md { font-size: .85em; }
+.size-lg { font-size: 1.5em; }
+.size-xl { font-size: 2em; }
+.half-width { width: 50%; }
+
+.pointer { cursor: pointer; }
+.uppercase{ text-transform: uppercase; }
+.ellipsis { text-overflow: ellipsis; overflow: hidden; }
+
+.f-main-color { color: #373C4F; }
+.f-secondary-color { color: var(--secondary-text); }
+.b-main-color { background: var(--accent-color); }
+.numbers::-webkit-outer-spin-button,
+.numbers::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.popup {
+  position: relative;
+  width: 53em;
+  height: 33em;
+  background: #FFFFFF;
+  overflow-x: hidden;
+}
+.popup .close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #FCFCFC;
+  border-bottom-left-radius: var(--radius-sm);
+  transition: background-color .25s ease-in-out;
+}
+.popup .close-btn:hover {
+  background: #EF5350;
+}
+.header {
+  padding-bottom: 1em;
+}
+.sidebar-payment{
+  width: 16.5em;
+  padding-left: 2em;
+  padding-top: 5em;
+}
+
+.header .title {
+  font-size: 1.2em;
+}
+.header .title span {
+  font-weight: 300;
+}
+
+.card-data > div {
+  padding-bottom: 1.5em;
+}
+.card-data > div:first-child {
+  padding-top: 1em;
+}
+
+.card-property-title {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  margin-right: 0.5em;
+}
+.card-property-title strong {
+  padding-bottom: .5em;
+  font-size: .85em;
+}
+.card-property-title span {
+  color: var(--secondary-text);
+  font-size: .75em;
+}
+.card-property-value {
+  flex: 1 1;
+}
+
+.card-number {
+  background: #fafafa;
+  border: var(--field-border);
+  border-radius: var(--radius-md);
+  padding: .5em 1em;
+}
+.card-number-field * { line-height: 1; margin: 0; padding: 0;}
+.card-number-field input { 
+  width: 3em;
+  height: 100%;
+  padding: .5em 0;
+  margin: 0 .75em;
+  border: none;
+  color: #888888;
+  background: transparent;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.timer span {
+  background: #311B92;
+  color: #FFFFFF;
+  width: 1.2em;
+  padding: 4px 0;
+  display: inline-block;
+  text-align: center;
+  border-radius: var(--radius-sm);
+}
+.timer span+span {
+    margin-left: 2px;
+}
+.timer em {
+  font-style: normal;
+}
+
+.action button {
+  margin-top: -10px;
+  padding:10px;
+  width: 100%;
+  height: 40px;
+  font-weight: 500;
+  font-size: 1em;
+  color: #FFFFFF;
+  border: none;
+  border-radius: var(--radius-md);
+  transition: background-color .2s ease-in-out;
+}
+.action button:hover {
+  background: #2979FF;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 2em;
+  overflow: hidden;
+  border: var(--field-border);
+  border-radius: var(--radius-md);
+}
+.input-container input, 
+.input-container i {
+  line-height: 1;
+}
+.input-container input {
+  flex: 1 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-weight: 800;
+  font-size: .85em;
+}
+.input-container input:focus {
+  background: #E3F2FD;
+  color: #283593;
+}
+.input-container input::placeholder {
+  color: #ddd;
+}
+.input-container input::-webkit-outer-spin-button,
+.input-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-container i {
+  position: absolute;
+  right: 0.5em;
+}
+
+.purchase-section {
+  position: relative;
+  overflow: visible;
+  padding: 0 1em 1em 1em;
+  background: var(--sidebar-color);
+  border-top-left-radius: .8em;
+  border-top-right-radius: .8em;
+}
+.purchase-section:before {
+  content: '';
+  position: absolute;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  left: -0.8em;
+  bottom: -0.8em;
+  background: #FFFFFF;
+}
+.purchase-section:after {
+  content: '';
+  position: absolute;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  right: -0.8em;
+  bottom: -0.8em;
+  background: #FFFFFF;
+}
+
+.card-mockup {
+  position: relative;
+  margin: -5em 1em 1.5em 1em;
+  padding: 1.5em 1.2em;
+  height: 10em;
+  border-radius: var(--radius-md);
+  background: #FFFFFF;
+  box-shadow: 0 .5em 1em .125em rgba(0,0,0, 0.1);
+}
+.card-mockup:after {
+  content: '';
+  position: absolute;
+  width: 25%;
+  top: -.2em;
+  left: 37.5%;
+  height: .2em;
+  background: var(--accent-color);
+  border-top-left-radius: .2em;
+  border-top-right-radius: .2em;
+}
+.card-mockup:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 25%;
+  left: 37.5%;
+  height: 0.5em;
+  background: #373c4f;
+  border-bottom-left-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+  box-shadow: 0 2px 15px 5px #373c4f;
+}
+
+.purchase-props {
+  margin: 0;
+  padding: 0;
+  font-size: .8em;
+  width: 100%;
+}
+.purchase-props li {
+  width: 100%;
+  line-height: 2.5;
+}
+.purchase-props li span {
+  color: var(--secondary-text);
+  font-weight: 600;
+}
+
+.separation-line {
+  border-top: 1px dashed #aaa;
+  margin-top: 0 .5em;
+}
+
+.total-section {
+  position: relative;
+  background-color: #f1f1f1;
+  height: 70px;
+  padding: 1em;
+  background: var(--sidebar-color);
+  border-bottom-left-radius: .8em;
+  border-bottom-right-radius: .8em;
+}
+.total-section:before {
+  content: '';
+  position: absolute;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  left: -0.8em;
+  top: -0.8em;
+  background: #FFFFFF;
+}
+.total-section:after {
+  content: '';
+  position: absolute;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  right: -0.8em;
+  top: -0.8em;
+  background: #FFFFFF;
+}
+.total-label {
+  font-size: 0.8em;
+  padding-bottom: 0.5em;
+}
+.total-section strong {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.total-section small {
+  font-weight: 600;
+}
+
+
+
+.fee-notice{
+  
+  height: 70px;
+  margin-top: 250px;
+  border: 2px solid #373c4f ;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.notice-text-notice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+ 
+}
+.fee-notice-content{
+  margin: -20px auto 0px auto;
+  font-size: small;
+  color: red;
+}
+
+.fee-form-select{
+  margin-top: 10px  ;
+}
+.form-select{
+  height: 40px;
+}
+
+/*examination*/
+
+
+
+#exam-registration{
+  height: 350px;
+  width: 100%;
+  border: 1px solid #0067FF;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+.floating-label-group {
+  position: relative;
+  margin-top: 17px;
+  
+}
+.floating-label-group input{
+  width: 100%;
+  height: 35px;
+}
+.floating-label-group .floating-label {
+  font-size: 13px;
+
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left: 12px;
+  transition: all 0.1s ease;
+}
+.floating-label-group input:focus ~ .floating-label,
+.floating-label-group input:not(:focus):valid ~ .floating-label {
+  top: -15px;
+  bottom: 0px;
+  left: 0px;
+  font-size: small;
+  opacity: 1;
+  color: #3e3e4c;
+}
+.row {
+  margin-top: 50px;
+}
+.register-btn{
+  margin: 5px 0px 0px 0px ;
+  
+  border: none;
+  border-radius: 3px;
+  padding: 7px;
+  width: 100%;
+}
+#title{
+  height: 50px;
+  width: 100%;
+  background-color: #0067FF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: large;
+  margin-top: 10px;
+}
+#register-form{
+  border: 2px solid #0067FF;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  display: none;
+}
+.pdf-frame{
+  height: 100%;
+  width: 340px;
+  border-radius: 20px;
+}
+#mid-panel-container{
+  padding: 10px;
+}
+select{
+  width: 100%;
+  padding: 5px;
+  height: 35px;
+}
+
+.test{
+  display: flex;
+  margin-top: 3px;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #373c4f;
+  color: #fff;
+}
+#test-panel{
+  margin-top: -20px;
+  border: 1.5px solid #373c4f;
+  padding: 0px 10px 5px 10px ;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+}
+.no-test{
+  color: #aaaaaa;
+  display: flex;
+  margin-left: 60px;
+}
+.available-tests{
+  margin-top: 30px;
+}
+#web-test{
+  border-top: 2px solid #888;
+  padding-top: 3px;
+  margin-top: 10px;
+}
+#take-now{
+  padding: 5px;
+  width: 100px;
+  background-color: #313c4f;
+  border-radius: 5px;
+  margin:-30px 0px 0px 340px;
+  display: flex;
+  justify-content: center;
+}
+#take-now a{
+  color: #fff;
+}
+#result{
+  background-color: #3e3e4c;
+}
+#result-panel{
+  border:1.5px solid #3e3e4c;
+  margin-top: -15px;
+  padding: 25px 10px 10px 10px ;
+}
+#result-panel input,select{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  padding: 0px 0px 0px 10px;
+}
+.download-result-btn{
+  
+  background-color: #3e3e4c;
+  border: none;
+  border-radius: 5px;
+  color:#fff;
+}
+#download-result-btn{
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 30px;
+  width: 100%;
+  display: none;
+}
+#download-admitcard-btn{
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 30px;
+  width: 100%;
+  display: none;
+}
+#admit-card{
+  background-color: #373c47;
+}
+#admit-card-panel{
+  border:1.5px solid #373c47;
+  margin-top: -15px;
+  padding: 25px 10px 10px 10px ;
+}
+#admit-card-panel input,select{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  padding: 0px 0px 0px 10px;
+}
+#download-admit-btn{
+  background-color: #372c47;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+#pdf-frame-display{
+  display: flex;
+  width: 100%;
+  height: 380px;
+}
+.warning{
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-size: small;
+  display: none;
+}
+.test-icon{
+  height: 50px;
+  width: 60px;
+}
+
+
+
+
+
+
+container {
+  
+  display: block;
+  width: 100%;
+
+  margin: 10px 0px 0px 0px;
+  border-radius: 3px;
+  
+  position: relative;
+  background: white;
+  box-shadow: 10px 10px 100px 0 #d9eaf4;
+  
+  
+}
+.quiz-results{
+  height: 230px;
+  overflow: auto;
+  border: 1.5px solid #555;
+  border-radius: 10px;
+}
+
+
+
+
+details {
+
+  width: 100%;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+details:last-of-type {
+  border-bottom: none;
+}
+details summary {
+  height: 30px;
+  display: block;
+  user-select: none;
+  outline: none;
+  padding: 20px;
+  margin-bottom: 0px;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+details summary:last-of-type {
+  border-bottom: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary:before {
+  font: normal normal normal 1em/1 FontAwesome;
+  font-weight: 900;
+  content: "";
+  margin-right: 0.5em;
+}
+details summary:hover {
+  background: #f6f8fb;
+  cursor: pointer;
+}
+details summary.success:before {
+  color: #9cc320;
+  content: "";
+}
+details summary.warning:before {
+  color: #ffa50a;
+  content: "";
+}
+details summary.failure:before {
+  color: #da281e;
+  content: "";
+}
+details ul {
+  padding: 0;
+  margin-left: 1em;
+}
+details ul li {
+  list-style: none;
+  padding: 1em 1em 1em 3em;
+  font-weight: bold;
+  position: relative;
+}
+details ul li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  float: left;
+  content: "";
+  width: 0em;
+  height: 1.5em;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+details ul li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  float: left;
+  content: "";
+  width: 1em;
+  height: 100%;
+  border-left: 1px solid #ccc;
+}
+details ul li:last-child:after {
+  display: none;
+}
+details ul li div {
+  opacity: 0;
+}
+details ul li div:before {
+  font: normal normal normal 1em/1 FontAwesome;
+  font-weight: 900;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  padding: 0 0.5em;
+  display: block;
+  float: left;
+  content: "";
+  width: 1em;
+  height: 100%;
+}
+details ul li div.success:before {
+  color: #9cc320;
+  content: "";
+}
+details ul li div.warning:before {
+  color: #ffa50a;
+  content: "";
+}
+details ul li div.failure:before {
+  color: #da281e;
+  content: "";
+}
+details ul li span {
+  display: block;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+details ul li span:before {
+  opacity: 0.3;
+  font-weight: bold;
+}
+details ul li span.status:before {
+  content: "status: ";
+}
+details ul li span.info:before {
+  content: "info: ";
+}
+details[open] summary {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+details[open] summary ~ ul li:nth-child(1) div, details[open] summary ~ ul li:nth-child(1) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 0s;
+}
+details[open] summary ~ ul li:nth-child(1):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 0.1s;
+}
+details[open] summary ~ ul li:nth-child(2) div, details[open] summary ~ ul li:nth-child(2) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 0.1s;
+}
+details[open] summary ~ ul li:nth-child(2):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 0.2s;
+}
+details[open] summary ~ ul li:nth-child(3) div, details[open] summary ~ ul li:nth-child(3) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 0.2s;
+}
+details[open] summary ~ ul li:nth-child(3):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 0.3s;
+}
+details[open] summary ~ ul li:nth-child(4) div, details[open] summary ~ ul li:nth-child(4) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 0.3s;
+}
+details[open] summary ~ ul li:nth-child(4):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 0.4s;
+}
+details[open] summary ~ ul li:nth-child(5) div, details[open] summary ~ ul li:nth-child(5) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 0.4s;
+}
+details[open] summary ~ ul li:nth-child(5):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 0.5s;
+}
+details[open] summary ~ ul li:nth-child(6) div, details[open] summary ~ ul li:nth-child(6) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 0.5s;
+}
+details[open] summary ~ ul li:nth-child(6):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 0.6s;
+}
+details[open] summary ~ ul li:nth-child(7) div, details[open] summary ~ ul li:nth-child(7) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 0.6s;
+}
+details[open] summary ~ ul li:nth-child(7):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 0.7s;
+}
+details[open] summary ~ ul li:nth-child(8) div, details[open] summary ~ ul li:nth-child(8) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 0.7s;
+}
+details[open] summary ~ ul li:nth-child(8):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 0.8s;
+}
+details[open] summary ~ ul li:nth-child(9) div, details[open] summary ~ ul li:nth-child(9) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 0.8s;
+}
+details[open] summary ~ ul li:nth-child(9):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 0.9s;
+}
+details[open] summary ~ ul li:nth-child(10) div, details[open] summary ~ ul li:nth-child(10) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 0.9s;
+}
+details[open] summary ~ ul li:nth-child(10):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 1s;
+}
+details[open] summary ~ ul li:nth-child(11) div, details[open] summary ~ ul li:nth-child(11) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 1s;
+}
+details[open] summary ~ ul li:nth-child(11):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 1.1s;
+}
+details[open] summary ~ ul li:nth-child(12) div, details[open] summary ~ ul li:nth-child(12) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 1.1s;
+}
+details[open] summary ~ ul li:nth-child(12):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 1.2s;
+}
+details[open] summary ~ ul li:nth-child(13) div, details[open] summary ~ ul li:nth-child(13) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 1.2s;
+}
+details[open] summary ~ ul li:nth-child(13):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 1.3s;
+}
+details[open] summary ~ ul li:nth-child(14) div, details[open] summary ~ ul li:nth-child(14) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 1.3s;
+}
+details[open] summary ~ ul li:nth-child(14):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 1.4s;
+}
+details[open] summary ~ ul li:nth-child(15) div, details[open] summary ~ ul li:nth-child(15) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 1.4s;
+}
+details[open] summary ~ ul li:nth-child(15):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 1.5s;
+}
+details[open] summary ~ ul li:nth-child(16) div, details[open] summary ~ ul li:nth-child(16) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 1.5s;
+}
+details[open] summary ~ ul li:nth-child(16):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 1.6s;
+}
+details[open] summary ~ ul li:nth-child(17) div, details[open] summary ~ ul li:nth-child(17) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 1.6s;
+}
+details[open] summary ~ ul li:nth-child(17):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 1.7s;
+}
+details[open] summary ~ ul li:nth-child(18) div, details[open] summary ~ ul li:nth-child(18) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 1.7s;
+}
+details[open] summary ~ ul li:nth-child(18):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 1.8s;
+}
+details[open] summary ~ ul li:nth-child(19) div, details[open] summary ~ ul li:nth-child(19) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 1.8s;
+}
+details[open] summary ~ ul li:nth-child(19):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 1.9s;
+}
+details[open] summary ~ ul li:nth-child(20) div, details[open] summary ~ ul li:nth-child(20) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 1.9s;
+}
+details[open] summary ~ ul li:nth-child(20):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 2s;
+}
+details[open] summary ~ ul li:nth-child(21) div, details[open] summary ~ ul li:nth-child(21) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 2s;
+}
+details[open] summary ~ ul li:nth-child(21):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 2.1s;
+}
+details[open] summary ~ ul li:nth-child(22) div, details[open] summary ~ ul li:nth-child(22) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 2.1s;
+}
+details[open] summary ~ ul li:nth-child(22):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 2.2s;
+}
+details[open] summary ~ ul li:nth-child(23) div, details[open] summary ~ ul li:nth-child(23) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 2.2s;
+}
+details[open] summary ~ ul li:nth-child(23):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 2.3s;
+}
+details[open] summary ~ ul li:nth-child(24) div, details[open] summary ~ ul li:nth-child(24) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 2.3s;
+}
+details[open] summary ~ ul li:nth-child(24):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 2.4s;
+}
+details[open] summary ~ ul li:nth-child(25) div, details[open] summary ~ ul li:nth-child(25) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 2.4s;
+}
+details[open] summary ~ ul li:nth-child(25):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 2.5s;
+}
+details[open] summary ~ ul li:nth-child(26) div, details[open] summary ~ ul li:nth-child(26) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 2.5s;
+}
+details[open] summary ~ ul li:nth-child(26):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 2.6s;
+}
+details[open] summary ~ ul li:nth-child(27) div, details[open] summary ~ ul li:nth-child(27) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 2.6s;
+}
+details[open] summary ~ ul li:nth-child(27):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 2.7s;
+}
+details[open] summary ~ ul li:nth-child(28) div, details[open] summary ~ ul li:nth-child(28) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 2.7s;
+}
+details[open] summary ~ ul li:nth-child(28):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 2.8s;
+}
+details[open] summary ~ ul li:nth-child(29) div, details[open] summary ~ ul li:nth-child(29) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 2.8s;
+}
+details[open] summary ~ ul li:nth-child(29):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 2.9s;
+}
+details[open] summary ~ ul li:nth-child(30) div, details[open] summary ~ ul li:nth-child(30) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 2.9s;
+}
+details[open] summary ~ ul li:nth-child(30):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 3s;
+}
+details[open] summary ~ ul li:nth-child(31) div, details[open] summary ~ ul li:nth-child(31) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 3s;
+}
+details[open] summary ~ ul li:nth-child(31):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 3.1s;
+}
+details[open] summary ~ ul li:nth-child(32) div, details[open] summary ~ ul li:nth-child(32) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 3.1s;
+}
+details[open] summary ~ ul li:nth-child(32):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 3.2s;
+}
+details[open] summary ~ ul li:nth-child(33) div, details[open] summary ~ ul li:nth-child(33) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 3.2s;
+}
+details[open] summary ~ ul li:nth-child(33):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 3.3s;
+}
+details[open] summary ~ ul li:nth-child(34) div, details[open] summary ~ ul li:nth-child(34) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 3.3s;
+}
+details[open] summary ~ ul li:nth-child(34):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 3.4s;
+}
+details[open] summary ~ ul li:nth-child(35) div, details[open] summary ~ ul li:nth-child(35) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 3.4s;
+}
+details[open] summary ~ ul li:nth-child(35):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 3.5s;
+}
+details[open] summary ~ ul li:nth-child(36) div, details[open] summary ~ ul li:nth-child(36) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 3.5s;
+}
+details[open] summary ~ ul li:nth-child(36):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 3.6s;
+}
+details[open] summary ~ ul li:nth-child(37) div, details[open] summary ~ ul li:nth-child(37) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 3.6s;
+}
+details[open] summary ~ ul li:nth-child(37):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 3.7s;
+}
+details[open] summary ~ ul li:nth-child(38) div, details[open] summary ~ ul li:nth-child(38) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 3.7s;
+}
+details[open] summary ~ ul li:nth-child(38):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 3.8s;
+}
+details[open] summary ~ ul li:nth-child(39) div, details[open] summary ~ ul li:nth-child(39) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 3.8s;
+}
+details[open] summary ~ ul li:nth-child(39):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 3.9s;
+}
+details[open] summary ~ ul li:nth-child(40) div, details[open] summary ~ ul li:nth-child(40) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 3.9s;
+}
+details[open] summary ~ ul li:nth-child(40):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 4s;
+}
+details[open] summary ~ ul li:nth-child(41) div, details[open] summary ~ ul li:nth-child(41) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 4s;
+}
+details[open] summary ~ ul li:nth-child(41):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 4.1s;
+}
+details[open] summary ~ ul li:nth-child(42) div, details[open] summary ~ ul li:nth-child(42) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 4.1s;
+}
+details[open] summary ~ ul li:nth-child(42):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 4.2s;
+}
+details[open] summary ~ ul li:nth-child(43) div, details[open] summary ~ ul li:nth-child(43) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 4.2s;
+}
+details[open] summary ~ ul li:nth-child(43):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 4.3s;
+}
+details[open] summary ~ ul li:nth-child(44) div, details[open] summary ~ ul li:nth-child(44) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 4.3s;
+}
+details[open] summary ~ ul li:nth-child(44):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 4.4s;
+}
+details[open] summary ~ ul li:nth-child(45) div, details[open] summary ~ ul li:nth-child(45) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 4.4s;
+}
+details[open] summary ~ ul li:nth-child(45):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 4.5s;
+}
+details[open] summary ~ ul li:nth-child(46) div, details[open] summary ~ ul li:nth-child(46) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 4.5s;
+}
+details[open] summary ~ ul li:nth-child(46):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 4.6s;
+}
+details[open] summary ~ ul li:nth-child(47) div, details[open] summary ~ ul li:nth-child(47) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 4.6s;
+}
+details[open] summary ~ ul li:nth-child(47):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 4.7s;
+}
+details[open] summary ~ ul li:nth-child(48) div, details[open] summary ~ ul li:nth-child(48) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 4.7s;
+}
+details[open] summary ~ ul li:nth-child(48):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 4.8s;
+}
+details[open] summary ~ ul li:nth-child(49) div, details[open] summary ~ ul li:nth-child(49) div:before {
+  animation: sweep 0.5s ease-in-out normal forwards;
+  animation-delay: 4.8s;
+}
+details[open] summary ~ ul li:nth-child(49):before {
+  animation: grow 0.5s ease-in-out normal forwards;
+  animation-delay: 4.9s;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: -1em;
+    margin-right: 1em;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 1em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#notifications-bar-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  display: none;
+  
+}
+.notification-container{
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  border:1px solid #311B92;
+  margin: 10px 00px 0px -650px;
+  border-radius: 10px;
+  background-color: #FFF;
+}
+#notifications-container-header{
+  background-color: #292B3B;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+#notification-container-close{
+  height: 30px;
+  width: 50px;
+  margin-left: 230px;
+  margin-top: 190px;
+  color: #fff;
+  background-color: #373c4f;
+  border-radius: 5px;
+}
+#notification-container-content{
+  padding: 10px;
+}

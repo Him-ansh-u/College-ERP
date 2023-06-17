@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Yale_University_Shield_1.svg/419px-Yale_University_Shield_1.svg.png?20180101211517">
+    <link rel="stylesheet" href="/resources/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="/resources/index.js" defer></script>
+</head>
+<body> 
+    
+    <div class="main-app">
+
+
+        <div class="sidebar">
+            <li class="menu-item active">
+                <a href="/" class="menu-a" >
+                  
+                    <img class="logo" src="/images/logo.svg" title="Yale uniersity" alt="">
+             
+                 
+                </a>
+              </li>
+
+
+          <nav class="main-nav">
+            <ul class="main-menu">
+                <li class="menu-item">
+                    <a href="/dashboard" class="menu-a">
+                      <div class="menu-txt-hld">
+                        <i class="fas fa-home menu-icon"></i>
+                        <span class="menu-txt">Home</span>
+                      </div>
+                    </a>
+                </li>
+
+              <li class="menu-item ">
+                <a href="/examination" class="menu-a">
+                  <div class="menu-txt-hld">
+                    <i class="fa fa-school menu-icon" aria-hidden="true"></i>
+                    <span class="menu-txt">Examination</span>
+                  </div>
+                </a>
+              </li>
+              
+              <li class="menu-item">
+                <a href="/fee" class="menu-a">
+                  <div class="menu-txt-hld">
+                    <i class="fas fa-credit-card menu-icon"></i>
+                    <span class="menu-txt">Fee Transactions</span>
+                  </div>
+                </a>
+              </li>
+              <li class="menu-item active">
+                <a href="/profile" class="menu-a">
+                  <div class="menu-txt-hld">
+                    <i class="fas fa-user-circle menu-icon"></i>
+                    <span class="menu-txt">My profile</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          
+         <li class="menu-item active">
+                <a href="/login" class="menu-a">
+                  <div class="menu-txt-hld">
+                    <i class="fa fa-sign-out-alt menu-icon" aria-hidden="true"></i>
+                    <span class="menu-txt">Logout</span>
+                  </div>
+                </a>
+              </li>
+
+
+
+
+
+        </div>
+        
+        <div class="main">
+            
+          <div class="main-bar">
+            <div class="current-page" >
+                Profile
+            </div>
+            <div id="profile-preview">
+                 
+                <div class="prof-details-summary">
+                    <ul>
+                        <li><i class="fas fa-user prof-icon"></i><strong title="Name" class="prof-text">Akshit Tiwari</strong></li>
+                        <li><i class="fas fa-hashtag prof-icon"></i> <span title="Roll number" class="prof-text" >BCAX28R980</span> </li>
+                        <li><i class="fa fa-phone-volume prof-icon" aria-hidden="true"></i><span class="prof-text" title="Mobile Number" >+91 91919 19191</span></li>
+                        <li><i class="fas fa-envelope-open prof-icon"></i><span title="Email"  class="prof-text" >akshit@gmail.com</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fas fa-user profile-img"></i>
+                </div>
+        </div>
+        <div id="details" >
+            <div >
+                <div class="btn-grp">
+                    <button onclick="getGeneral()" class="prof-btn" >General </button>
+                    <button onclick="getProgram()" class="prof-btn" >Program </button>
+                </div>
+                <div class="btn-grp">
+                    <button onclick="getFamily()" class="prof-btn" >Family </button>
+                    <button onclick="getAddress()" class="prof-btn">Address  </button>
+                </div>
+                
+            </div>
+            <div class="prof-details" >
+                <div id="general-details">
+                    <table class="table" >
+                        <tr>
+                            <th>First Name:</th>
+                            <td>Akshit</td>
+                        </tr>
+                        <tr>
+                            <th>Last Name:</th>
+                            <td>Tiwari</td>
+                        </tr>
+                        <tr>
+                            <th>Date of birth:</th>
+                            <td>12/06/2002</td>
+                        </tr>
+                        <tr>
+                            <th>Gender:</th>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <th>Blood Group:</th>
+                            <td>B+</td>
+                        </tr>
+                        <tr>
+                            <th>Moblie</th>
+                            <td>91919 19191</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>akshit@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Nationality</th>
+                            <td>Indian</td>
+                        </tr>
+                        <tr>
+                            <th>Aadhar</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>PAN</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th title="Person With Disability">PWD</th>
+                            <td> None </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="program-details">
+                    <table class="table" >
+                        <tr>
+                            <th>Batch</th>
+                            <td>2020-2023</td>
+                        </tr>
+                        <tr>
+                            <th>Program</th>
+                            <td>BCA</td>
+                        </tr>
+                        <tr>
+                            <th>Roll number</th>
+                            <td>BCAX28R980</td>
+                        </tr>
+                        <tr>
+                            <th>Current Semester</th>
+                            <td>VI</td>
+                        </tr>
+                        
+                    </table>
+                    
+                </div>
+                <div id="family-details">
+                    <table class="table" >
+                        <div class="relation" > Father</div>
+                        <tr>
+                            <th>Name</th>
+                            <td>Ashutosh Tiwari</td>
+                        </tr>
+                        <tr>
+                            <th>Date Of Birth</th>
+                            <td>23/04/1975</td>
+                        </tr>
+                        <tr>
+                            <th>Blood Group</th>
+                            <td>B+</td>
+                        </tr>
+                        <tr>
+                            <th>Phone Number</th>
+                            <td id="Mobile-number-data-text">92929 29292</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>ashutosh@gmail.com</td>
+                        </tr>
+                    </table>
+                    <table class="table" >
+                        <div class="relation" > Mother</div>
+                        <tr>
+                            <th>Name</th>
+                            <td>Preeti Tiwari</td>
+                        </tr>
+                        <tr>
+                            <th>Date Of Birth</th>
+                            <td>29/07/1978</td>
+                        </tr>
+                        <tr>
+                            <th>Blood Group</th>
+                            <td>B+</td>
+                        </tr>
+                        <tr>
+                            <th>Phone Number</th>
+                            <td>93939 39393</td>
+                            
+                        </tr>
+                        <tr>
+                            <th>Mother</th>
+                            <td>preeti@gmail.com</td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <div id="address-details">
+                    <table id="address-table" class="table" >
+                        <tr>
+                            <th>Present Address:</th>
+                            <td>Shaitan Gali khatara mahal shamshan ghat k saamne</td>
+                        </tr>
+                        <tr>
+                            <th>Permanent Address:</th>
+                            <td></td>
+                        </tr>
+                       
+                        
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="sidebar-right">
+           
+            <div class="current-page" >
+                Update student profile
+            </div>
+            <div id="update-profie" >
+
+
+
+                    <div class="update-profile-element"  id="change-password" >Change password</div>
+                        <form id="change-password-form" action="">
+                        <div class="floating-label-group">
+                            <input type="password"  class="form-control" autocomplete="off" required >
+                            <label class="floating-label">Current Password</label>
+                        </div>
+                        <div class="floating-label-group">
+                            <input id="change-password-password" type="password"  class="form-control" autocomplete="off" required >
+                            <label class="floating-label">New Password</label>
+                        </div>
+                        <div class="floating-label-group">
+                            <input type="password"  class="form-control" autocomplete="off" required >
+                            <label class="floating-label">Confirm Password</label>
+                        </div>
+                        <input type="submit" id="password-submit" class="update-submit-btn" value="Change Password">
+                    </form>
+                    
+
+
+
+
+                    <div class="update-profile-element" id="contact-info" >Contact Information</div>
+                        <form id="contact-info-form" action="">
+                        <div class="floating-label-group">
+                            <input type="number"  class="form-control" id="newMobileNo" autocomplete="off" required >
+                            <label class="floating-label">Mobile Number</label>
+                        </div>
+                        
+                        <div class="floating-label-group">
+                            <input type="email"  class="form-control" autocomplete="off" required >
+                            <label class="floating-label">Email</label>
+                        </div>
+                        <button id="contact-submit" onclick="changeContact()" class="update-submit-btn" >Submit</button>
+                    </form>
+
+                    <div class="update-profile-element" id="address-info" >Addresses</div>
+                        <form id="address-info-form" action="">
+                        <div class="floating-label-group">
+                            <input type="number"  class="form-control" autocomplete="off" required >
+                            <label class="floating-label">Currrent Address</label>
+                        </div>
+                        <div class="floating-label-group">
+                            <input type="number"  class="form-control" autocomplete="off" required >
+                            <label class="floating-label">Permanent address</label>
+                        </div>
+                      
+                        <button id="address-submit" class="update-submit-btn" >Submit</button>
+                    </form>
+
+
+
+                    <div class="update-profile-element" id="other-info" >Other Information</div>
+                        <form id="other-info-form" action="">
+                        <div class="floating-label-group">
+                            <input type="number"  class="form-control" autocomplete="off" required >
+                            <label class="floating-label">Nationality</label>
+                        </div>
+                        <div class="floating-label-group">
+                            <input type="number"  class="form-control" autocomplete="off" required >
+                            <label class="floating-label">Blood Group</label>
+                        </div>
+                        <div class="floating-label-group">
+                            <input type="email"  class="form-control" autocomplete="off" required >
+                            <label class="floating-label">Display Name</label>
+                        </div>
+                        <button id="other-submit" class="update-submit-btn" >Submit</button>
+                    </form>
+                  
+                    
+
+                 
+            </div>
+            <div id="warning-text" >To Update Others Please Contact The Collage Management</div>
+        </div>
+          
+            
+
+
+
+
+
+
+
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+
+
+
+
+    <script>
+        const form = document.getElementById('change-password-form')
+			form.addEventListener('submit', registerUser)
+
+			async function registerUser(event) {
+				event.preventDefault()
+				const password = document.getElementById('change-password-password').value
+
+				const result = await fetch('/api/change-password', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						newpassword: password,
+						token: localStorage.getItem('token')
+					})
+				}).then((res) => res.json())
+
+				if (result.status === 'ok') {
+					// everythign went fine
+					alert('Success')
+				} else {
+					alert(result.error)
+				}
+			}
+
+
+
+
+
+
+    </script>
+</body>
+</html>

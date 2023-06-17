@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Yale_University_Shield_1.svg/419px-Yale_University_Shield_1.svg.png?20180101211517">
+    <link rel="stylesheet" href="/resources/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <script src="/resources/index.js" defer></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="main-app">
+
+
+        <div class="sidebar">
+            <li class="menu-item active">
+                <a href="/" class="menu-a" >
+                  
+                    <img class="logo" src="/images/logo.svg" title="Yale uniersity" alt="">
+             
+                 
+                </a>
+              </li>
+
+
+          <nav class="main-nav">
+            <ul class="main-menu">
+              <li class="menu-item ">
+                <a href="/dashboard" class="menu-a">
+                  <div class="menu-txt-hld">
+                    <i class="fa fa-home menu-icon" aria-hidden="true"></i>
+                    <span class="menu-txt">Home</span>
+                  </div>
+                </a>
+              </li>
+              <li class="menu-item active">
+                <a href="/examination" class="menu-a">
+                  <div class="menu-txt-hld">
+                    <i class="fas fa-school menu-icon"></i>
+                    <span class="menu-txt">Examination</span>
+                  </div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="/fee" class="menu-a">
+                  <div class="menu-txt-hld">
+                    <i class="fas fa-credit-card menu-icon"></i>
+                    <span class="menu-txt">Fee Transactions</span>
+                  </div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="/profile" class="menu-a">
+                  <div class="menu-txt-hld">
+                    <i class="fas fa-user-circle menu-icon"></i>
+                    <span class="menu-txt">My profile</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          
+         <li class="menu-item active">
+                <a href="/login" class="menu-a">
+                  <div class="menu-txt-hld">
+                    <i class="fa fa-sign-out-alt menu-icon" aria-hidden="true"></i>
+                    <span class="menu-txt">Logout</span>
+                  </div>
+                </a>
+              </li>
+ 
+
+
+
+
+        </div>
+        
+        <div class="main">
+            
+          <div class="main-bar">
+            <div class="current-page" >
+              Examination
+          </div>
+            <div>
+              <div class="test" id="admit-card" >Admit card</div>
+              <div id="admit-card-panel" >
+                  <form action="">
+                      <div>
+                          <input type="text" id="prog" placeholder="Program" required>
+                      </div>
+                      <div>
+                          <select name="" id="" required>
+                              <option value="">Select Semester</option>
+                              <option value="semester I">Semester I</option>
+                              <option value="semester II">Semester II</option>
+                              <option value="semester III">Semester III</option>
+                              <option value="semester IV">Semester IV</option>
+                              <option value="semester V">Semester V</option>
+                              <option value="semester VI">Semester VI</option>
+                          </select>
+                      </div>
+                      <div>
+                          <select name="" id="exm-sel" required>
+                              <option value="">Select Exam Type</option>
+                              <option value="Mid">Mid Semester</option>
+                              <option value="End">End Semester</option>
+                          </select>
+                      </div>
+                      <input id="download-admit-btn" type="submit" onclick="getAdmit()"  value="Submit">
+                      <a  id="download-admitcard-btn" class="download-result-btn" href="/Resources/admit-WA0014.pdf" download >Download Admit card</a>
+                      <div id="warning-admit" class="warning">Please enter all the details</div>
+                  </form>
+              </div>
+              </div>
+              <div>
+
+              </div>
+              <div>
+                <div class="test" id="result" >Result</div>
+                <div id="result-panel" >
+                    <form action="">
+                        <div>
+                            <input type="text" id="program" placeholder="Program">
+                        </div>
+                        <div>
+                            <select name="" id="semester-select">
+                                <option value="">Select Semester</option>
+                                <option value="semester I">Semester I</option>
+                                <option value="semester II">Semester II</option>
+                                <option value="semester III">Semester III</option>
+                                <option value="semester IV">Semester IV</option>
+                                <option value="semester V">Semester V</option>
+                                <option value="semester VI">Semester VI</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="" id="exam-select">
+                                <option value="">Select Exam Type</option>
+                                <option value="Mid">Mid Semester</option>
+                                <option value="End">End Semester</option>
+                            </select>
+                        </div>
+                        <input class="download-result-btn" type="submit" onclick="getResult()"  value="Submit">
+                        <a  id="download-result-btn" class="download-result-btn" href="/Resources/SBU200328_Semester4_ExaminationType2.pdf" download >Download Result</a>
+                        <div id="warning-result" class="warning">Please enter all the details</div>
+                    </form>
+                </div>
+              </div>
+
+
+          </div>
+
+
+
+
+
+            
+          <div class="sidebar-right">
+            <div class="current-page" >
+              Tests and Results
+          </div>
+            <div >
+              <div class="test" id="test-test">Tests</div>
+              <div id="test-panel">
+                <div class="available-tests">
+                  <div>
+                      <img  class="test-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt=""> 
+                      <span>JavaScript</span><br>
+                     
+                  </div>
+                  <div id="take-now">
+                      <a  href="quiz.html">Take Now</a>
+                  </div>
+                </div> 
+                <div id="web-test" class="available-tests">
+                  <div>
+                      <img  class="test-icon" src="https://i.pinimg.com/564x/78/88/15/78881534bc83ec0438d7abff5b1839dd.jpg" alt=""> 
+                      <span>Web development</span><br>
+                      
+                  </div>
+                  <div id="take-now">
+                      <a  href="web quiz.html">Take Now</a>
+                  </div>
+                </div> 
+              </div>
+              
+<container>
+  <div class="current-page" >
+    Quiz results
+</div>
+<div class="quiz-results">
+  <details>
+    <summary class="success">JS Unit Tests</summary>
+    <ul>
+      <li> 
+        <div class="success">Test 1<span class="status">succeeded</span></div>
+      </li>
+      <li>
+        <div class="success">Test 2<span class="status">succeeded</span></div>
+      </li>
+    </ul>
+  </details>
+
+  <details open="open">
+    <summary class="failure">DB Unit Tests</summary>
+    <ul>
+      <li> 
+        <div class="success">Test 1<span class="status">succeeded</span></div>
+      </li>
+      <li>
+        <div class="success">Test 2<span class="status">succeeded</span></div>
+      </li>
+      
+    </ul>
+  </details>
+</div>
+</container>
+              </div>
+
+
+
+              
+        
+
+
+          </div>
+
+
+
+
+
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    s
+</body>
+</html>

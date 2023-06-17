@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Yale_University_Shield_1.svg/419px-Yale_University_Shield_1.svg.png?20180101211517">
+    <link rel="stylesheet" href="/resources/login.css">
+    <script src="/resources/login.js" defer></script>
+
+
+</head>
+<body>
+    <div class="LoginPageContainer">
+        <div class="LoginPageInnerContainer">
+            <div class="ImageContianer">
+                <img src="/images/login img.png" class="GroupImage">
+            </div>
+            <div class="LoginFormContainer">
+                <div class="LoginFormInnerContainer">
+                    <div class="LogoContainer">
+                        <img src="https://wbwaterdata.org/uploads/group/2020-07-12-145545.029739230-2307146transparent-yale-university-logo-hd-png-download.png" class="logo">
+                    </div>
+                    <header class="header">Log in</header>
+                    <header class="subHeader">Welcome to <b>Yale University!</b> Please Login to access diary</header>
+    
+                    <form id="login">
+                        <div class="inputContainer">
+                            <label class="label" ><img src="/images/email.png" class="labelIcon"><span>Username</span></label>
+                            <input type="text" class="input" id="username" placeholder="Enter your Email Address">
+                        </div>
+                        <div class="inputContainer">
+                            <label class="label" for="emailAddress"><img src="/images/pass.png"
+                                    class="labelIcon"><span>Password*</span></label>
+                            <input type="password" class="input" id="password" placeholder="Enter your Password">
+                        </div>
+                        <div class="OptionsContainer">
+                            <div class="checkboxContainer">
+                                <input type="checkbox" id="RememberMe" class="checkbox"> <label for="RememberMe">Remember
+                                    me</label>
+                            </div>
+                            <a href="#" class="ForgotPasswordLink">Forgot Password?</a>
+                        </div>
+                        <input type="submit" class="LoginButton"  value="Login">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
