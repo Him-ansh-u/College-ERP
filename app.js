@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken')
 
 const JWT_SECRET = 'sdjkfh8923yhjdksbfma@#*(&@*!^#&@bhjb2qiuhesdbhjdsfg839ujkdhfjk'
 
-mongoose.connect('mongodb://localhost:27017/login-app-db', {
+mongoose.connect("mongodb+srv://abhijeetghs24:S@bu200227@abhijeet.3bu7dee.mongodb.net/?retryWrites=true&w=majority&appName=Abhijeet" , {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 	useCreateIndex: true
@@ -19,6 +19,10 @@ app.use(express.static('./static'))
 
 app.get('/login',(req,res)=>{
     res.sendFile(path.resolve(__dirname+ '/static/login.html'))
+})
+
+app.get('/create',(req,res)=>{
+    res.sendFile(path.resolve(__dirname+ '/static/registration.html'))
 })
 app.get('/dashboard',(req,res)=>{
 	res.sendFile(path.resolve(__dirname+ '/static/dashboard.html'))
